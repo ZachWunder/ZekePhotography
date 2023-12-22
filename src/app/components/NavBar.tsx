@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -47,33 +48,39 @@ const NavBar = () => {
           {/* Right Section: SVG Icons */}
           <div className="flex flex-1 justify-end space-x-4">
             {/* LinkedIn */}
-            <Image
-              src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/bd1abf89-0fc8-4780-2898-505640314900/public"
-              alt="Icon 1"
-              width={20}
-              height={20}
-            />
-            {/* Instagram */}
-            <Image
+            <Link href="https://www.linkedin.com/in/zeke-ramirez-52b325279/">
+              <Image
+                src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/bd1abf89-0fc8-4780-2898-505640314900/public"
+                alt="Icon 1"
+                width={20}
+                height={20}
+              />
+            </Link>
+            {/* Youtube */}
+            {/* <Image
               src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/296595d4-563f-4b14-280d-17581789e300/public"
               alt="Icon 2"
               width={20}
               height={20}
-            />
-            {/* Youtube */}
-            <Image
-              src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/6876c4ea-d7cf-4c27-1277-48fadc361500/public"
-              alt="Icon 3"
-              width={25}
-              height={18}
-            />
+            /> */}
+            {/* Instagram */}
+            <Link href="https://www.instagram.com/zekenramirez/">
+              <Image
+                src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/6876c4ea-d7cf-4c27-1277-48fadc361500/public"
+                alt="Icon 3"
+                width={25}
+                height={18}
+              />
+            </Link>
             {/* Email */}
-            <Image
-              src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/20e95e9c-582b-4f82-be84-c9f6bbc91d00/public"
-              alt="Icon 4"
-              width={20}
-              height={20}
-            />
+            <Link href="mailto:zekeram@gmail.com">
+              <Image
+                src="https://imagedelivery.net/fqcRqpTzkWmIADGq5aUedQ/20e95e9c-582b-4f82-be84-c9f6bbc91d00/public"
+                alt="Icon 4"
+                width={20}
+                height={20}
+              />
+            </Link>
           </div>
         </div>
       </div>
